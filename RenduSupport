@@ -1,0 +1,15 @@
+1. Context du projet
+2. Enjeux & Objectifs
+3. Estimation du temps
+4. Configuration requise
+5. Présentation de l'API discord
+6. BOT Weather
+	- Organisation du projet
+	- Explication
+		- app.js
+		-DiscordWeather.js
+		-printer.js
+		-weather.js
+	- Resultat
+7. BOT GPS
+8. BOT ActuCiné
