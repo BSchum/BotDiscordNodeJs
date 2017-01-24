@@ -1,17 +1,76 @@
 1. Context du projet
+
+Ce projet se pose dans le cadre d'une évaluation dans le cours "Node JS" par Mr Danielyan à Ynov Ingèsup - Lyon.
+Nous allons creer 3 BOT sur discord, avec des fonctionnalités différentes.
+	- BotWeather
+	- BotGPS
+	- BotActuCiné
+
+	Boite à outils :
+		Editeur de Texte sublime text.
+		Possibilité d'utiliser Visual Studio Code.
+
+	Pré-requis :
+		installation nodejs
+		installation npm
+
 2. Enjeux & Objectifs
+
+Ce projet a pour but d'analyser, de tester et d'intéragir avec un utilisateur sur Discord par le biais de plusieurs BOT.
+
+Un cahier des charges techniques
+	*Fonctionnalités :
+		** Affichage de certaines données météorologique.
+		** Affichage proximité des utilisateurs.
+		** Affichage des actualités cinématographiques.
+
+	*Contraintes :
+		** Utilisation d'API
+		** Utilisation de NodeJS
+		** Répartition des taches 
+
 3. Estimation du temps
+
+BotWeather :
+La création du BotWeather est estimé à 2h30 sans compté la partie recherche et documentation. Nous avons décomposé le BotWeather en plusieurs tâche.
+
+	1- Faire une requête GET vers l'URL de l'API openweather.
+	2- Lire le contenu du fichier JSON
+	3- Parse du contenu au format JSON
+	4- Recuperer les informations et afficher
+	5- Ecouter la conversation Discord
+	6- Renvoyer les donnés sur le Discord
+
+<!Screen Trello à mettre>
+
 4. Partage des taches.
-4. Configuration requise
-5. Présentation de l'API discord
-6. BOT Weather
+Nous sommes composé d'un groupe de 3, nous avons donc chacun developpé un BOT.
+// TODO
+
+
+//5. Configuration requise
+6. Présentation de l'API discord
+7. BOT Weather
 	- Organisation du projet
+		// regarder dans estimation du temps BotWeather.
+
 	- Explication
 		- app.js
+			Correspond au mains de notre programme. C'est avec app.js que 				Discord va communiquer pour obtenir les informations 				météorologique.
+
 		-DiscordWeather.js
+			Le fichier, correspond a toute la logique sur discord.
+			Connexion du BOT à discord. Ecoute de la discussion. Appel à 				app.js et affichage du résultat sur la conversation discord.
+
 		-printer.js
+			On retrouve les deux fonctions d'affichage. Celle concernant 				les erreurs et celui concernant l'affichage des données. 				L'affichage se fait en console.log(). Afin de pouvoir débug 				plus facilement.
+
 		-weather.js
+			Le fichier, correspond a toute la logique pour obtenir les 				données météorologique.
+			Utilisation de l'API, et consommation des données obtenues.
+			
 	- Resultat
-7. BOT GPS
-8. BOT ActuCiné
-9. difficulté rencontré & adaptation.
+		<!Screen>
+8. BOT GPS
+9. BOT ActuCiné
+10. difficulté rencontré & adaptation.
