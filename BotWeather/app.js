@@ -1,5 +1,6 @@
 var weather =require('./weather');
 
+//Main fonction and add option to get information for many city
 function Weather(cities,callback){
 	try{
 		cities.forEach(function(city){

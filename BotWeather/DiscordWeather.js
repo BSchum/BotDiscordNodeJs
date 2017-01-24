@@ -3,13 +3,15 @@ var app =require('./app');
 const bot = new Discord.Client();
 
 
+// Test if starts with "!".
 function notCommande(prefix,message){
 	if(!message.content.startsWith(prefix)){
-		console.log("Le test not Commande : ok ");
+		console.log("It's not a commande for bot ");
 		return;
 	}
 }
 
+// Bot send a message if user write "!Weather"
 function helloBot(prefix,message){
 	notCommande(prefix,message);
 	if(message.content == prefix + "Weather"){
@@ -17,6 +19,7 @@ function helloBot(prefix,message){
     }
 }
 
+// Bot send a message with Weather data if user write "!getWeather"
 function getWeather(prefix,message){
 	notCommande(prefix,message);
 	if(message.content.startsWith(prefix + "getWeather")){
@@ -32,6 +35,7 @@ function getWeather(prefix,message){
 	}
 }
 
+// Bot is listening if commande is use.
 bot.on('message', (message) => {
 	let prefix = "!";
 

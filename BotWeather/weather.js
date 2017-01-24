@@ -3,6 +3,7 @@ var printer =require('./printer');
 
 var stringToSend ="";
 
+//Get information on the API and return it
 function get(city, callback){
 	var request = http.get("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=15b4a682aec747499c3f40f4c401e615", function(reponse){
 
