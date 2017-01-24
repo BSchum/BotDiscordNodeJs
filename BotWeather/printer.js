@@ -1,5 +1,6 @@
-function printMessage(city, temperature, pressure){
-	return("A " + city + " ,la temperature est de " + (temperature-273.15).toFixed(2) + "°C et la pression est de "+ pressure + " pascales");
+function printMessage(city, temperature, environement){
+	console.log("A " + city + " ,la temperature est de " + (temperature-273.15).toFixed(2) + "°C et le temps est "+ environement);
+	return("A " + city + " ,la temperature est de " + (temperature-273.15).toFixed(2) + "°C et le temps est "+ environement);
 }
 
 function printError(error){

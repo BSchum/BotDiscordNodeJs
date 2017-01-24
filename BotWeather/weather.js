@@ -16,7 +16,7 @@ function get(city, callback){
 			if(reponse.statusCode === 200){
 				try{
 					var data_weather = JSON.parse(body);
-					stringToSend = (printer.printMessage(city, data_weather.main.temp, data_weather.main.pressure));
+					stringToSend = (printer.printMessage(city, data_weather.main.temp, data_weather.weather[0].description));
 					callback(stringToSend);
 				}catch(error){
 					printer.printError(error);
