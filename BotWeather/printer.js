@@ -1,7 +1,7 @@
 // Write the message in console.log and return the string.
 function printMessage(city, temperature, environement){
-	console.log("A " + city + " ,la temperature est de " + (temperature-273.15).toFixed(2) + "°C et le temps est "+ environement);
-	return("A " + city + " ,la temperature est de " + (temperature-273.15).toFixed(2) + "°C et le temps est "+ environement);
+	console.log("In " + city + " ,the temperature is " + (temperature-273.15).toFixed(2) + "°C and the weather is "+ environement);
+	return("In  " + city + " ,the temperature is " + (temperature-273.15).toFixed(2) + "°C and the weather is "+ environement);
 }
 
 //Write error
